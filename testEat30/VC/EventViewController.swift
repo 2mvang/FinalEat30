@@ -15,6 +15,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
 //    @IBOutlet var eventAddress: UILabel!
     
     let eventTableData = EventDataLoader().eventData
+    let eventName: () = ()
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -25,6 +26,11 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
         // Do any additional setup after loading the view.
     }
     
+//    override func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+//        let vc = segue.destination as! EventInfoVC
+//        vc.eventName = cell.textLabel
+//    }
+    
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         return eventTableData.count
     }
@@ -32,7 +38,7 @@ class EventViewController: UIViewController, UITableViewDelegate, UITableViewDat
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
             //as! EventInfoVC
-        cell.textLabel?.text = eventTableData[indexPath.row].event_name
+        cell.textLabel?.text = eventTableData[indexPath.row].event_name; eventName
         
         return cell
         

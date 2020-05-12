@@ -22,9 +22,11 @@
 		5872AB3F2461F96800781C2F /* VendorDataLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872AB3E2461F96800781C2F /* VendorDataLoader.swift */; };
 		5872AB412461F97700781C2F /* VendorViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872AB402461F97700781C2F /* VendorViewController.swift */; };
 		5872AB432461F98600781C2F /* VendorInfoVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872AB422461F98600781C2F /* VendorInfoVC.swift */; };
-		5872AB452461F99500781C2F /* EventReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872AB442461F99500781C2F /* EventReviewVC.swift */; };
-		5872AB472461F9A100781C2F /* VendorReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872AB462461F9A100781C2F /* VendorReviewVC.swift */; };
+		5872AB452461F99500781C2F /* VOIDEventReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872AB442461F99500781C2F /* VOIDEventReviewVC.swift */; };
+		5872AB472461F9A100781C2F /* MakeReviewVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5872AB462461F9A100781C2F /* MakeReviewVC.swift */; };
 		5872AB492461F9E800781C2F /* vendors.json in Resources */ = {isa = PBXBuildFile; fileRef = 5872AB482461F9E800781C2F /* vendors.json */; };
+		5874E797246B27B6006364D7 /* VendorReviewsVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874E796246B27B6006364D7 /* VendorReviewsVC.swift */; };
+		5874E799246B27E6006364D7 /* AddEventVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5874E798246B27E6006364D7 /* AddEventVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -45,9 +47,11 @@
 		5872AB3E2461F96800781C2F /* VendorDataLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorDataLoader.swift; sourceTree = "<group>"; };
 		5872AB402461F97700781C2F /* VendorViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorViewController.swift; sourceTree = "<group>"; };
 		5872AB422461F98600781C2F /* VendorInfoVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorInfoVC.swift; sourceTree = "<group>"; };
-		5872AB442461F99500781C2F /* EventReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventReviewVC.swift; sourceTree = "<group>"; };
-		5872AB462461F9A100781C2F /* VendorReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorReviewVC.swift; sourceTree = "<group>"; };
+		5872AB442461F99500781C2F /* VOIDEventReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VOIDEventReviewVC.swift; sourceTree = "<group>"; };
+		5872AB462461F9A100781C2F /* MakeReviewVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MakeReviewVC.swift; sourceTree = "<group>"; };
 		5872AB482461F9E800781C2F /* vendors.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = vendors.json; sourceTree = "<group>"; };
+		5874E796246B27B6006364D7 /* VendorReviewsVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = VendorReviewsVC.swift; sourceTree = "<group>"; };
+		5874E798246B27E6006364D7 /* AddEventVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddEventVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +93,7 @@
 				5849C1822461375C00BC703F /* LaunchScreen.storyboard */,
 				5849C1852461375C00BC703F /* Info.plist */,
 				5849C1902461401B00BC703F /* EventTableViewCell.swift */,
+				5872AB442461F99500781C2F /* VOIDEventReviewVC.swift */,
 			);
 			path = testEat30;
 			sourceTree = "<group>";
@@ -97,11 +102,12 @@
 			isa = PBXGroup;
 			children = (
 				5849C17B2461375000BC703F /* EventViewController.swift */,
+				5849C19B2461E6D100BC703F /* EventInfoVC.swift */,
+				5874E798246B27E6006364D7 /* AddEventVC.swift */,
 				5872AB402461F97700781C2F /* VendorViewController.swift */,
 				5872AB422461F98600781C2F /* VendorInfoVC.swift */,
-				5872AB442461F99500781C2F /* EventReviewVC.swift */,
-				5872AB462461F9A100781C2F /* VendorReviewVC.swift */,
-				5849C19B2461E6D100BC703F /* EventInfoVC.swift */,
+				5874E796246B27B6006364D7 /* VendorReviewsVC.swift */,
+				5872AB462461F9A100781C2F /* MakeReviewVC.swift */,
 			);
 			path = VC;
 			sourceTree = "<group>";
@@ -192,7 +198,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				5874E797246B27B6006364D7 /* VendorReviewsVC.swift in Sources */,
 				5849C19C2461E6D100BC703F /* EventInfoVC.swift in Sources */,
+				5874E799246B27E6006364D7 /* AddEventVC.swift in Sources */,
 				5872AB3F2461F96800781C2F /* VendorDataLoader.swift in Sources */,
 				5849C1922461401B00BC703F /* EventTableViewCell.swift in Sources */,
 				5849C17C2461375000BC703F /* EventViewController.swift in Sources */,
@@ -202,9 +210,9 @@
 				5849C198246140A600BC703F /* EventDataLoader.swift in Sources */,
 				5849C1782461375000BC703F /* AppDelegate.swift in Sources */,
 				5849C1942461402E00BC703F /* EventData.swift in Sources */,
-				5872AB472461F9A100781C2F /* VendorReviewVC.swift in Sources */,
+				5872AB472461F9A100781C2F /* MakeReviewVC.swift in Sources */,
 				5849C17A2461375000BC703F /* SceneDelegate.swift in Sources */,
-				5872AB452461F99500781C2F /* EventReviewVC.swift in Sources */,
+				5872AB452461F99500781C2F /* VOIDEventReviewVC.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
